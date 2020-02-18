@@ -6,7 +6,8 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppComponent } from './app.component';
 import { TopBarComponent } from './top-bar/top-bar.component';
-import { ProductListComponent } from './product-list/product-list.component';
+// import { ProductListComponent } from './product-list/product-list.component';
+import { FilmsComponent } from './films/films.component';
 
 
 @NgModule({
@@ -15,13 +16,14 @@ import { ProductListComponent } from './product-list/product-list.component';
     ReactiveFormsModule,
     NgbModule,
     RouterModule.forRoot([
-      { path: '', component: ProductListComponent },
+      { path: '', component: FilmsComponent },
     ])
   ],
   declarations: [
     AppComponent,
     TopBarComponent,
-    ProductListComponent
+    // ProductListComponent,
+    FilmsComponent
   ],
   bootstrap: [ AppComponent ],
   entryComponents: [],
