@@ -1,11 +1,18 @@
 import { Component } from '@angular/core';
+import  films  from '../films.json';
+
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: [ './app.component.css' ]
 })
-export class AppComponent  {}
+export class AppComponent  {
+
+
+    public filmList:{title:string, year:string, image:string}[] = films;
+
+}
 
 
 /*
