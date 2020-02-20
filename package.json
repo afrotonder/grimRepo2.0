@@ -22,7 +22,6 @@
     "sass": "1.25.0",
     "tslib": "1.10.0",
     "web-animations-js": "2.3.2",
-    "write-json-file": "^4.3.0",
     "zone.js": "0.10.2"
   },
   "scripts": {
