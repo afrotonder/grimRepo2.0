@@ -10,7 +10,7 @@ import  films  from './films.json';
 export class AppComponent  {
 
 
-    public filmList:{title:string, year:string, image:string}[] = films;
+    public filmList:{title:string, year:string, image:string}[] = JSON.parse(films);
 
 }
 
