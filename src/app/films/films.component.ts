@@ -35,7 +35,7 @@ export class FilmsComponent  {
 
   open(content) {
 
-    console.log("wo ",JSON.parse(films))
+    console.log("wo ",JSON.stringify(films))
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
     }, (reason) => {
