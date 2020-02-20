@@ -35,7 +35,7 @@ export class FilmsComponent  {
 
   open(content) {
 
-    console.log("wo ",JSON.stringify(films))
+    // console.log("wo ",JSON.stringify(films.))
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
     }, (reason) => {
@@ -57,11 +57,11 @@ export class FilmsComponent  {
 
     console.warn('Your order has been submitted', customerData);
     
-    const writeJsonFile = require('write-json-file');
+    // const writeJsonFile = require('write-json-file');
  
-      (async () => {
-          await writeJsonFile('../films.json', this.newFilm);
-      })();
+    //   (async () => {
+    //       await writeJsonFile('../films.json', this.newFilm);
+    //   })();
 
 
 
