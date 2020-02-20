@@ -24,7 +24,6 @@ export class FilmsComponent  {
                 private modalService: NgbModal,
                 private formBuilder: FormBuilder
               ) {
-     let data = require("../films.json");
     
      this.addFilm = this.formBuilder.group({
       title: '',
