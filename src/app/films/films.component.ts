@@ -5,7 +5,6 @@ import { FormBuilder } from '@angular/forms';
 
 //@ts-ignore // why i have to do this is beyond me 
 import { movies } from '../movies';
-// import  films  from '../films.json';
 
 
 @Component({
@@ -36,7 +35,6 @@ export class FilmsComponent  {
 
   open(content) {
 
-    // console.log("wo ",JSON.stringify(films.film))
     this.modalService.open(content, {ariaLabelledBy: 'modal-basic-title'}).result.then((result) => {
       this.closeResult = `Closed with: ${result}`;
     }, (reason) => {
@@ -51,19 +49,12 @@ export class FilmsComponent  {
    onSubmit(customerData) {
     // Process checkout data here
     this.newFilm = customerData ;
-    console.log("new film data ", this.newFilm) 
-    console.log("this filmsd ", movies)
+
     // movie.push(this.newFilm)
     this.addFilm.reset();
 
     console.warn('Your order has been submitted', customerData);
     
-    // const writeJsonFile = require('write-json-file');
- 
-    //   (async () => {
-    //       await writeJsonFile('../films.json', this.newFilm);
-    //   })();
-
 
 
   }
