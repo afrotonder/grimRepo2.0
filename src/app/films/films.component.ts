@@ -5,7 +5,7 @@ import { FormBuilder } from '@angular/forms';
 
 //@ts-ignore // why i have to do this is beyond me 
 import { movies } from '../movies';
-import  films  from '../films.json';
+// import  films  from '../films.json';
 
 
 @Component({
