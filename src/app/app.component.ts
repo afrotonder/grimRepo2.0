@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import  films  from '../films.json';
+import  films  from './films.json';
 
 
 @Component({
