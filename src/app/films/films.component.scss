@@ -1,19 +1,36 @@
+// ********************************** MODAL **********************************
+
+.modal {
+  position: absolute ;
+  top: 0 ;
+}
+
 .add {
   background-color: red ;
 }
+.filter {
+  background-color: green ;
+}
 
 .modal-body {
-  height: 50em ;
+  height: 20em ;
 }
+
+
+// ********************************** MODAL **********************************
+
+// ********************************** FILM COMPONENT **********************************
 
 .movie {
   width: 13em;
   text-align: center ;
+  margin: 2em 0 0 0 ;
 
 
   h3 {
-    margin-bottom: 1em ;
     color: white ;
+    font-size: 18px ;
+    margin: 1em auto 1em auto ;
   }
 
   img {
@@ -22,6 +39,7 @@
   }
 
 }
+// ********************************** FILM COMPONENT **********************************
 
 
 
@@ -33,31 +51,21 @@
   color: black ;
   font-style: italic ;
   padding-left: 10px ;
+  display: flex ;
+  justify-content: space-between ;
 
-
-//  padding: .2em ;
   h2 {
     margin: 0 ;
     padding: .3em ;
   }
   
-
-  display: flex ;
-  justify-content: space-between ;
-
-
-
-  
 }
-
-
 
 .row {
   display: flex ;
   flex-direction: row ;
   flex-wrap: wrap ;
-  // margin: 0 2em 0 2em ;
   width: 100% ;
-  
+  margin: 0 ;
   justify-content: space-evenly ;
 }

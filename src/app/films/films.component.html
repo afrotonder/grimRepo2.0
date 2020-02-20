@@ -3,17 +3,20 @@
     Films
   </h2>
   
-  <button title="Add Film" class="add"   (click)="open(content)">
+  <button title="Filter" class="filter"   (click)="open(content)">
     🎃
+  </button>
+   <button title="Add Film" class="add"   (click)="open(content)">
+    ➕
   </button>
 </div>
 
 <div class="row"> 
   <div class="movie" *ngFor="let movie of films">
+    <img src={{movie.image}}/>
     <h3>
         {{ movie.title }} ({{movie.year}})
     </h3>
-    <img src={{movie.image}}/>
   </div>
 </div>
 

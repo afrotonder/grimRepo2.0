@@ -19,6 +19,16 @@ export const movies = [
     year: 1995,
     image: 'https://images-na.ssl-images-amazon.com/images/I/418DYHFY7QL._AC_SY445_.jpg'
   },
+  {
+    title: 'Rosemary\s Baby',
+    year: 1968,
+    image: 'https://upload.wikimedia.org/wikipedia/en/thumb/e/ef/Rosemarys_baby_poster.jpg/220px-Rosemarys_baby_poster.jpg'
+  },
+  {
+    title: 'The Houses October Built',
+    year: 2014,
+    image: 'https://horrorcultfilms.co.uk/wp-content/uploads/2015/08/houses-of-halloween.jpg'
+  },
   // {
   //   title: '',
   //   year: ,
