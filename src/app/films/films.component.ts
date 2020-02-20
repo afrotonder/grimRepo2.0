@@ -57,11 +57,11 @@ export class FilmsComponent  {
 
     console.warn('Your order has been submitted', customerData);
     
-    const writeJsonFile = require('write-json-file');
+    // const writeJsonFile = require('write-json-file');
  
-      (async () => {
-          await writeJsonFile('foo.json', {foo: true});
-      })();
+    //   (async () => {
+    //       await writeJsonFile('foo.json', {foo: true});
+    //   })();
 
 
 
