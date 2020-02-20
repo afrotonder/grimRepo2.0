@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import  films  from './films.json';
+// import  films  from './films.json';
 
 
 @Component({
@@ -10,7 +10,7 @@ import  films  from './films.json';
 export class AppComponent  {
 
 
-    public filmList:{title:string, year:string, image:string}[] = JSON.parse(films);
+    // public filmList:{title:string, year:string, image:string}[] = JSON.parse(films);
 
 }
 
