@@ -2,13 +2,14 @@
   <h2>
     Films
   </h2>
-  
-  <button title="Filter" class="filter"   (click)="open(content)">
-    🎃
-  </button>
-   <button title="Add Film" class="add"   (click)="open(content)">
-    ➕
-  </button>
+  <div class="buttonRow">
+    <button title="Filter" class="filter"   (click)="filter()">
+      🎃
+    </button>
+    <button title="Add Film" class="add"   (click)="open(content)">
+      ➕
+    </button>
+  </div>
 </div>
 
 <div class="row"> 
@@ -22,14 +23,39 @@
 
 <ng-template #content let-modal>
   <div class="modal-header">
-    <h4 class="modal-title" id="modal-basic-title">Profile update</h4>
+    <h4 class="modal-title" id="modal-basic-title">Add Film</h4>
     <button type="button" class="close" aria-label="Close" (click)="modal.dismiss('Cross click')">
       <span aria-hidden="true">&times;</span>
     </button>
   </div>
 
   <div class="modal-body">
-    DIMELO WO
+    <form [formGroup]="addFilm" (ngSubmit)="onSubmit(addFilm.value)">
+
+  <div>
+    <label for="title">
+      Title
+    </label>
+    <input id="title" type="text" formControlName="title">
+  </div>
+
+  <div>
+    <label for="year">
+      Year
+    </label>
+    <input id="year" type="number" formControlName="year">
+  </div>
+  
+  <div>
+    <label for="image">
+      Film Cover
+    </label>
+    <input id="image" type="text" formControlName="image">
+  </div>
+
+  <button class="button" type="submit">Add!</button>
+
+</form>
   </div>
   
 </ng-template>
